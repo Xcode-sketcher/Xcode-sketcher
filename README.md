@@ -41,16 +41,16 @@
 ###
 
 <div align="left">
-  <a href="vkm_vouk" target="_blank">
+  <a href="[vkm_vouk](https://discord.com/users/vkm_vouk)" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
   </a>
-  <a href="www.linkedin.com/in/eduardo-barbosa-silva-896635363" target="_blank">
+  <a href="[www.linkedin.com/in/eduardo-barbosa-silva-896635363](https://www.linkedin.com/in/eduardo-barbosa-silva-896635363)" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
-  <a href="emailto:eduardobarbosasilva.oficial@outlook.com" target="_blank">
+  <a href="mailto:eduardobarbosasilva.oficial@outlook.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Outlook&logo=microsoft-outlook&label=&color=0078D4&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="microsoft-outlook logo"  />
   </a>
-  <a href="emailto:eduardobarbosasilva.oficial@gmail.com" target="_blank">
+  <a href="mailto:eduardobarbosasilva.oficial@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
 </div>
