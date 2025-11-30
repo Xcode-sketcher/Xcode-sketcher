@@ -1,61 +1,20 @@
-name: Generate Pacman graph and update README
+- uses: Platane/snk@v3
+  with:
+    # github user name to read the contribution graph from (**required**)
+    # using action context var `github.repository_owner` or specified user
+    github_user_name: ${{ github.repository_owner }}
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate pacman-contribution-graph.svg
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
-
-      - name: Move generated SVG and update README
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -eo pipefail
-          # Ensure output exists
-          if [ ! -f dist/pacman-contribution-graph.svg ]; then
-            echo "Generated SVG not found at dist/pacman-contribution-graph.svg"
-            exit 1
-          fi
-
-          mkdir -p images
-          cp -f dist/pacman-contribution-graph.svg images/pacman-contribution-graph.svg
-
-          # Prepend the image to README if not present
-          if ! grep -q "pacman-contribution-graph.svg" README.md; then
-            echo "Adding pacman contribution graph to README.md"
-            echo "" >> README.md
-            echo "![Pacman contribution graph](images/pacman-contribution-graph.svg)" | cat - README.md > README.new
-              fi
-              git add images/pacman-contribution-graph.svg README.md || true
-              if git diff --staged --quiet; then
-              echo "No changes to commit"
-              else
-              git commit -m "chore: update pacman contribution graph"
-              git push origin HEAD
-              fi
-                    # Check for changes to commit
-                    if git diff --staged --quiet; then
-                        echo "No changes to commit"
-                    else
-                        git commit -m "chore: update pacman contribution graph"
-                        git push origin HEAD
-                    fi
+    # list of files to generate.
+    # one file per line. Each output can be customized with options as query string.
+    #
+    #  supported options:
+    #  - palette:           A preset of color, one of [github, github-dark, github-light]
+    #  - color_snake:       Color of the snake
+    #  - color_dots:        Coma separated list of dots color.
+    #                       The first one is 0 contribution, then it goes from the low contribution to the highest.
+    #                       Exactly 5 colors are expected.
+    #  - color_background:  Color of the background (for gif only)
+    outputs: |
+      dist/github-snake.svg
+      dist/github-snake-dark.svg?palette=github-dark
+      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
