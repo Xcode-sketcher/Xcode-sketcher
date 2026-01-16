@@ -1,8 +1,12 @@
-<h2 align="left">Olá👋 Meu nome é Eduardo</h2>
+<h1 align="center">Olá 👋 Meu nome é Eduardo</h1>
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=7F3ACE&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;Apaixonado+por+c%C3%B3digo+%F0%9F%92%BB;Sempre+aprendendo+algo+novo" alt="Typing SVG" />
+</div>
 
 ###
 
-<p align="left">Sou um Desenvolvedor Full-Stack ingressando no mercado de desenvolvimento de software, tenho 19 anos e muita paixão pelo código e as etapas necessárias para a solução do problema! Gosto de estudar e procuro sempre estar atualizado nos mais diversos tópicos, desde atualizações de syntax, até conteúdos pertinentes a outras áreas do TI, como infraestrutura; suporte e manutenção; rede de computadores. Esse é meu perfil do github, não prometo nada, mas sempre estarei trabalhando em algo ou estudando um novo tema.</p>
+<p align="left">Sou um Desenvolvedor Full-Stack ingressando no mercado de desenvolvimento de software, tenho 19 anos e muita paixão pelo código e as etapas necessárias para a solução do problema! Gosto de estudar e procuro sempre estar atualizado nos mais diversos tópicos, desde atualizações de syntax, até conteúdos pertinentes a outras áreas do TI, como infraestrutura; suporte e manutenção; rede de computadores. Esse é meu perfil do GitHub - sempre trabalhando em algo ou estudando um novo tema.</p>
 
 ---
 ###
@@ -15,15 +19,16 @@
 
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Xcode-sketcher&theme=graywhite&show_icons=true&hide_border=true&count_private=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Xcode-sketcher&theme=graywhite&show_icons=true&hide_border=true&layout=compact" height="150" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xcode-sketcher&theme=tokyonight" />
 </div>
 
-###
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Xcode-sketcher&theme=tokyonight" height="150" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xcode-sketcher&theme=tokyonight&utcOffset=-3" height="150" />
+</div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Xcode-sketcher&theme=radical" height="150" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app/?username=Xcode-sketcher" height="150" alt="trophy graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Xcode-sketcher&theme=tokyo-night&hide_border=true" />
 </div>
 
 <h2 align="center">Tecnologias</h2>
@@ -34,7 +39,7 @@
   </a>
 </div>
 
-![snake gif](https://github.com/Xcode-sketcher/Xcode-sketcher/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://raw.githubusercontent.com/Xcode-sketcher/Xcode-sketcher/output/github-contribution-grid-snake.svg)
 
 
 ###
