@@ -21,6 +21,9 @@ jobs:
     timeout-minutes: 5
     
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
@@ -29,12 +32,22 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
           
+      - name: push generated assets to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: generate metrics-languages.svg
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: dist/metrics-languages.svg
-          output_action: none
+          filename: metrics-languages.svg
+          output_action: commit
+          committer_branch: output
+          committer_message: "chore: update languages metrics [skip ci]"
           base: ""
           plugin_languages: yes
           plugin_languages_ignored: html, css
@@ -44,8 +57,10 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: dist/metrics-isocalendar.svg
-          output_action: none
+          filename: metrics-isocalendar.svg
+          output_action: commit
+          committer_branch: output
+          committer_message: "chore: update isocalendar metrics [skip ci]"
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
@@ -54,17 +69,11 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: dist/metrics-achievements.svg
-          output_action: none
+          filename: metrics-achievements.svg
+          output_action: commit
+          committer_branch: output
+          committer_message: "chore: update achievements metrics [skip ci]"
           base: ""
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
-          
-      - name: push generated assets to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
