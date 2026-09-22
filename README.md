@@ -1,38 +1,28 @@
+<h1 align="center">Olá 👋 Meu nome é Eduardo</h1>
+
+###
+
+<p align="Center">Bem vindo ao meu perfil!</p>
+
+<br></br>
+
+<h2 align="center">Tecnologias</h2>
+
 <div align="center">
-  <p align="center">Bem vindo ao meu perfil!</p>
-
-   <br></br>
-
-  <table border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td style="border: 4px solid #000000; box-shadow: 8px 8px 0px #000000; background: #c4c006; padding: 12px;">
-        <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="460" alt="Pixel Scene" />
-      </td>
-    </tr>
-  </table>
-
-  <br></br>
-
-  <table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td style="border: 4px solid #000000; box-shadow: 10px 10px 0px #000000; background: #FFE600; padding: 22px 36px;">
-      <pre style="font-family: monospace; font-size: 13px; font-weight: 900; line-height: 1.15; color: #000000; margin: 0;">
-             (  )   (   )  )
-              ) (   )  (  (
-              ( )  (    ) )
-              _____________
-             <_____________> ___
-             |             |/ _ \
-             |   COFFEE    | / \ |
-             |   BREWER    | \_/ |
-             |             |\___/
-             \             /
-              \___________/
-             /_____________\
-            (_______________)
-      </pre>
-    </td>
-  </tr>
-</table>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/PostgreSQL/postgresql1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/MongoDB/mongodb1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Shell/shell2.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSharp/csharp1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Go/go1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/NodeJS/nodejs1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/TypeScript/typescript1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript3.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/NextJS/nextjs1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/React/react1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Sass/sass2.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSS/css1.svg"/>
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/HTML/html1.svg"/>
 
 </div>
