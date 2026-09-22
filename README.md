@@ -1,5 +1,5 @@
 <div align="center">
-  <p align="left">Bem vindo ao meu perfil! Sou um desenvolvedor de software e este é meu espaço onde eu publico meus projetos e materiais. Se curtiu algum deles não se esqueça de deixar uma ˗ˏˋ ★ ˎˊ˗</p>
+  <p align="center">Bem vindo ao meu perfil!</p>
 
    <br></br>
 
